@@ -1,0 +1,10 @@
+<div class='panel panel-primary' *ngIf='product'>
+  <div class='panel-heading'> 
+      {{pageTitle + ': '+ product.name}}
+  </div>
+  <div class='panle-footer'>
+    <a class='btn btn-default' (click)='onBack()' class='buttonBody'>
+      <i class='glyphicon glypicon-chevron-left'></i> Back
+    </a>
+  </div>
+</div>

@@ -1,0 +1,21 @@
+<!--The whole content below can be removed with the new code.-->
+<div style="text-align:center">
+  <h1>
+   Welcome to {{title}}!!
+  </h1>
+  <div>
+    <nav class='navbar navbar-default'>
+      <div>
+        <a class='navbar-brand'>{{pageTitle}}</a>
+        <ul class='nav navbar-nav'>
+          <li><a [routerLink]="['welcome']">Home</a></li>
+          <li><a [routerLink]="['products']">Product List</a></li>
+          <li><a [routerLink]="['map']">Map</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class='container'>
+        <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
